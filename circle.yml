@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 0.10.34
+
+test:
+  post:
+    - npm run test:xunit > ${CIRCLE_TEST_REPORTS}/tape.xml
+    
