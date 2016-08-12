@@ -1,8 +1,8 @@
 machine:
   node:
-    version: 0.10.34
+    version: 4.0.0
 
 test:
-  post:
+  override:
     - npm run test:xunit > ${CIRCLE_TEST_REPORTS}/tape.xml
     
