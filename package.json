@@ -1,7 +1,7 @@
 {
   "name": "@l1p/testpackage",
   "description": "Basic CI test for the lp1 project",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "license": "SEE LICENSE IN copyright.js",
   "main": "hello.js",
   "scripts": {
