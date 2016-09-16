@@ -1,14 +1,14 @@
 {
-  "name": "@l1p/testpackage",
+  "name": "@leveloneproject/deploytest",
   "description": "Basic CI test for the lp1 project",
-  "version": "0.0.4",
-  "license": "SEE LICENSE IN copyright.js",
-  "main": "hello.js",
+  "version": "0.1.0",
+  "license": "SEE LICENSE",
+  "main": "src/hello.js",
   "scripts": {
 	   "test:xunit": "tape ./test/*.js | tap-xunit"
   },
   "devDependencies": {
-    "tape": "4.6.0",
+    "tape": "^4.6.0",
 	  "tap-xunit": "^1.4.0"
   }
 }
