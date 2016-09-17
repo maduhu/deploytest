@@ -10,5 +10,8 @@
   "devDependencies": {
     "tape": "^4.6.0",
 	  "tap-xunit": "^1.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
   }
 }

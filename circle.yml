@@ -1,8 +1,12 @@
 machine:
   node:
-    version: 4.0.0
+    version: 6.5.0
 
 test:
   override:
     - set -o pipefail && npm -s run test:xunit > ${CIRCLE_TEST_REPORTS}/tape.xml
-    
+deployment:
+  releases:
+    branch: master
+    commands:
+      - npm publish
