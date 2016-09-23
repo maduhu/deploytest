@@ -5,12 +5,12 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
-	   "test:xunit": "tape ./test/*.js | tap-xunit",
+     "test:xunit": "tape ./test/*.js | tap-xunit",
      "lint" : "standard"
   },
   "devDependencies": {
     "tape": "^4.6.0",
-	  "tap-xunit": "^1.4.0",
+    "tap-xunit": "^1.4.0",
     "standard": "^8.1.0"
   },
   "publishConfig": {
