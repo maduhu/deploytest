@@ -5,8 +5,12 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
-     "test:xunit": "tape ./test/*.js | tap-xunit",
+     "test": "tape ./test/*.js | tap-xunit",
      "lint" : "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leveloneproject/deploytest"
   },
   "devDependencies": {
     "tape": "^4.6.0",
