@@ -6,6 +6,7 @@ test:
   override:
     - set -o pipefail && npm -s run test:xunit > ${CIRCLE_TEST_REPORTS}/tape.xml
     - npm run lint
+    - npm run coverage -s > report.lcov
 deployment:
   releases:
     branch: master
