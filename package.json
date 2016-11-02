@@ -1,12 +1,12 @@
 {
   "name": "@leveloneproject/deploytest",
   "description": "Basic CI test for the lp1 project",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
     "test": "tape ./test/*.js | tap-xunit",
-    "coverage": "nyc tape ./test/*.js report",
+    "coverage": "nyc report --reporter=lcov --reporter=text-lcov npm test",
     "lint": "standard"
   },
   "devDependencies": {
@@ -16,7 +16,7 @@
     "tape": "^4.6.0"
   },
   "publishConfig": {
-    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
+    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm"
   },
   "repository": {
     "type": "git",
