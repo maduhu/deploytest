@@ -7,7 +7,3 @@ test:
     - set -o pipefail && npm -s run test > ${CIRCLE_TEST_REPORTS}/tape.xml
     - npm run lint
     - set -o pipefail && npm -s run coverage > ${CIRCLE_TEST_REPORTS}/report.lcov
-deployment:
-  releases:
-    branch: master
-    commands:
