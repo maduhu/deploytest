@@ -4,9 +4,9 @@ machine:
 
 test:
   override:
-    - set -o pipefail && npm -s run test > ${CIRCLE_TEST_REPORTS}/tape.xml
+    - set -o pipefail && npm test > ${CIRCLE_TEST_REPORTS}/tape.xml
     - npm run lint
-    - set -o pipefail && npm -s run coverage > ${CIRCLE_TEST_REPORTS}/report.lcov
+    - npm -s run coverage
 deployment:
   releases:
     branch: master
