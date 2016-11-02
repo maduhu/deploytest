@@ -1,7 +1,8 @@
 var test = require('tape')
+const deploytest = require('..')
 
-test('A passing test', (assert) => {
-  assert.pass('This test will pass.')
-
+test('Hello is returned', (assert) => {
+  var hello = deploytest.sayHello()  
+  assert.equal(hello,"Hello World",'hello')
   assert.end()
 })

@@ -5,15 +5,20 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
-     "test:xunit": "tape ./test/*.js | tap-xunit",
-     "lint" : "standard"
+    "test": "nyc tape ./test/*.js | tap-xunit",
+    "lint": "standard"
   },
   "devDependencies": {
-    "tape": "^4.6.0",
+    "nyc": "^7.1.0",
+    "standard": "^8.1.0",
     "tap-xunit": "^1.4.0",
-    "standard": "^8.1.0"
+    "tape": "^4.6.0"
   },
   "publishConfig": {
     "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
   }
 }
