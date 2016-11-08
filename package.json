@@ -6,8 +6,8 @@
   "main": "src/hello.js",
   "scripts": {
     "test": "tape ./test/*.js | tap-xunit",
-    "tcoverage": "tape ./test/*.js --coverage",
-    "coverage": "nyc report --reporter=lcov --reporter=text-lcov npm test",
+    "createcoverage": "nyc npm test",
+    "reportcoverage": "nyc report --reporter=lcov --reporter=text-lcov npm test",
     "lint": "standard"
   },
   "devDependencies": {

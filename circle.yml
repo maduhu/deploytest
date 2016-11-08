@@ -6,7 +6,8 @@ test:
   override:
     - set -o pipefail && npm -s test > ${CIRCLE_TEST_REPORTS}/testresults.xml
     - npm run lint
-    - set -o pipefail && npm -s run coverage > ${CIRCLE_TEST_REPORTS}/coverage.lcov
+    - npm run createcoverage
+    - set -o pipefail && npm -s run reportcoverage > ${CIRCLE_TEST_REPORTS}/coverage.lcov
 deployment:
   releases:
     branch: master
