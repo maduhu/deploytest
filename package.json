@@ -1,11 +1,12 @@
 {
   "name": "@leveloneproject/deploytest",
   "description": "Basic CI test for the lp1 project",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
     "test": "tape ./test/*.js | tap-xunit",
+    "tcoverage": "tape ./test/*.js --coverage",
     "coverage": "nyc report --reporter=lcov --reporter=text-lcov npm test",
     "lint": "standard"
   },

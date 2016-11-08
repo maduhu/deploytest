@@ -1,8 +1,7 @@
 var test = require('tape')
-const deploytest = require('../src/hello.js')
+const sayHello = require('../src/hello').sayHello
 
 test('Hello is returned', (assert) => {
-  var hello = deploytest.sayHello()
-  assert.equal(hello, 'Hello World', 'hello')
+  assert.equal(sayHello(), 'Hello World', 'hello')
   assert.end()
 })
