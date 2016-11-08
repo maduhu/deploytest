@@ -12,4 +12,4 @@ deployment:
   releases:
     branch: master
     commands:
-      - npm publish
+      - scripts/ci-deploy.sh
