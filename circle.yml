@@ -12,4 +12,4 @@ deployment:
   releases:
     branch: master
     commands:
-      - scripts/ci-deploy.sh
+      - sh ./scripts/ci-deploy.sh
