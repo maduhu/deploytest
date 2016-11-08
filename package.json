@@ -17,7 +17,7 @@
     "tape": "^4.6.0"
   },
   "publishConfig": {
-    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm"
+    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
   },
   "repository": {
     "type": "git",
