@@ -2,7 +2,7 @@
 
 publishNpm() {
   # Push NPM package if not yet published
-  if [ "$(npm info $(npm ls --depth=-1 2>/dev/null | head -1 | cut -f 1 -d " ") 2>/dev/null)" = "undefined" ]; then
+   if [ "$(npm info $(npm ls --depth=-1 2>/dev/null | head -1 | cut -f 1 -d " ") 2>/dev/null)" = "undefined" ]; then
     npm publish
   fi
 }
@@ -20,3 +20,5 @@ pushDocker() {
 }
 
 publishNpm
+# pushDocker
+aws s3 cp ./coverage/lcov.info s3://elasticbeanstalk-us-west-1-886403637725/sonar/deploytest/
