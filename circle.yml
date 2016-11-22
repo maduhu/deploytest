@@ -14,3 +14,4 @@ deployment:
     branch: master
     commands:
       - sh ./scripts/ci-deploy.sh
+      - aws s3 cp ./coverage/lcov.info s3://elasticbeanstalk-us-west-2-886403637725/sonar/deploytest/

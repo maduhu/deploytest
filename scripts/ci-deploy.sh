@@ -21,4 +21,3 @@ pushDocker() {
 
 publishNpm
 # pushDocker
-aws s3 cp ./coverage/lcov.info s3://elasticbeanstalk-us-west-1-886403637725/sonar/deploytest/
