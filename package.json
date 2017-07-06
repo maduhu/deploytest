@@ -1,14 +1,16 @@
 {
   "name": "@leveloneproject/deploytest",
   "description": "Basic CI test for the lp1 project",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "SEE LICENSE IN LICENSE",
   "main": "src/hello.js",
   "scripts": {
     "test": "tape ./test/*.js | tap-xunit",
     "createcoverage": "nyc npm test",
     "reportcoverage": "nyc report --reporter=lcov --reporter=text-lcov npm test",
-    "lint": "standard"
+    "lint": "standard",
+    "server": "server.js",
+    "start": "node server.js"
   },
   "devDependencies": {
     "nyc": "^7.1.0",
@@ -16,11 +18,23 @@
     "tap-xunit": "^1.4.0",
     "tape": "^4.6.0"
   },
-  "publishConfig": {
-    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
+  "publishConfig":{
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
-  }
+    "url": "git@github.com:LevelOneProject/deploytest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LevelOneProject/deploytest/issues"
+  },
+  "homepage": "https://github.com/LevelOneProject/deploytest/blob/master/README.md",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nyc": "^7.1.0",
+    "tape": "^4.6.2"
+  },
+  "author": "Bill Hodghead (billh@crosslaketech.com)"
 }
