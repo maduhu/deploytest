@@ -2,7 +2,7 @@
   "name": "@leveloneproject/deploytest",
   "description": "Basic CI test for the lp1 project",
   "version": "0.3.5",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "CC-BY-SA-4.0",
   "main": "src/hello.js",
   "scripts": {
     "test": "tape ./test/*.js | tap-xunit",
